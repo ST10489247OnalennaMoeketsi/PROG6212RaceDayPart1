@@ -302,7 +302,7 @@ GO
    SEED DATA - RESULTS
    Results are linked to existing enrolments.
    ========================================================= */
-INSERT INTO dbo.Results
+INSERT INTO dbo.Results 
     (EnrolmentId, FinishTime, Position, ResultStatus)
 VALUES
     (1, '00:52:34', 12, N'Finished'),
