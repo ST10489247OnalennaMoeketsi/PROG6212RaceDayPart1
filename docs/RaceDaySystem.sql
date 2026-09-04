@@ -114,7 +114,7 @@ GO
    ENROLMENTS
    Links a Participant to a valid Event + Category combination.
    ========================================================= */
-CREATE TABLE dbo.Enrolments
+CREATE TABLE dbo.Enrolments 
 (
     EnrolmentId INT IDENTITY(1,1) NOT NULL,
     ParticipantId INT NOT NULL,
