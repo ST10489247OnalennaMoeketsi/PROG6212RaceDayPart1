@@ -21,7 +21,7 @@
 | POST | `/api/auth/login` | Authenticates a user and returns an access token. | Public | `{ "email": "a@example.com", "password": "Secret123!" }` | **200** token + user profile; **400** invalid request; **401** invalid credentials |
 | GET | `/api/users/me` | Gets the authenticated user's profile. | Authenticated | None | **200** profile; **401** unauthenticated; **404** profile not found |
 | PUT | `/api/users/me` | Updates the authenticated user's profile. | Authenticated | `{ "firstName": "A", "lastName": "B", "phone": "0712345678" }` | **200** updated profile; **400** validation error; **401** unauthenticated |
-| GET | `/api/events` | Lists events available in RaceDay. | Public | None | **200** event list; **500** server error |
+| GET | `/api/events`  | Lists events available in RaceDay. | Public | None | **200** event list; **500** server error |
 | GET | `/api/events/{id}` | Gets one event and its details. | Public | None | **200** event; **400** invalid ID; **404** event not found |
 | POST | `/api/events` | Creates an event owned by the logged-in organiser. | Organiser | `{ "eventName": "Pretoria City Run", "description": "...", "location": "Pretoria, Gauteng", "eventDate": "2026-10-10T07:00:00", "registrationDeadline": "2026-10-01T23:59:00", "status": "Open" }` | **201** Created; **400** invalid dates/data; **401** unauthenticated; **403** not organiser |
 | PUT | `/api/events/{id}` | Updates an event owned by the organiser. | Organiser | Event fields to update | **200** updated event; **400** invalid data; **401** unauthenticated; **403** wrong role/not owner; **404** not found |
