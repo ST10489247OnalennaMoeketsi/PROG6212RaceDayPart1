@@ -48,7 +48,7 @@ GO
    EVENTS
    Each event is owned by one Organiser.
    ========================================================= */
-CREATE TABLE dbo.Events
+CREATE TABLE dbo.Events 
 (
     EventId INT IDENTITY(1,1) NOT NULL,
     OrganiserId INT NOT NULL,
