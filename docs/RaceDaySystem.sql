@@ -323,7 +323,7 @@ SELECT * FROM dbo.Results;
 GO
 
 /* Relationship verification query */
-SELECT
+SELECT 
     e.EventName,
     c.Name AS CategoryName,
     u.FirstName + N' ' + u.LastName AS Participant,
