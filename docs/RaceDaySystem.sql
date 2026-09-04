@@ -93,7 +93,7 @@ GO
    between Events and Categories.
    Composite primary key: EventId + CategoryId.
    ========================================================= */
-CREATE TABLE dbo.EventCategories
+CREATE TABLE dbo.EventCategories 
 (
     EventId INT NOT NULL,
     CategoryId INT NOT NULL,
