@@ -1,0 +1,64 @@
+name: CI - Validate Part 1 Documents
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  validate-docs:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Check /docs folder exists
+        run: |
+          if [ -d "docs" ]; then
+            echo " /docs folder exists"
+          else
+            echo " /docs folder not found"
+            exit 1
+          fi
+      
+      - name: Check ERD file exists
+        run: |
+          if [ -f "docs/RaceDay-ERD.png" ] || [ -f "docs/RaceDay-ERD.webp" ] || [ -f "docs/ERD.png" ]; then
+            echo " ERD file found"
+          else
+            echo " ERD file not found"
+            exit 1
+          fi
+      
+      - name: Check API Endpoint Plan exists
+        run: |
+          if [ -f "docs/API-Endpoint-Plan.md" ] || [ -f "docs/API-Endpoint-Plan.pdf" ]; then
+            echo " API Endpoint Plan found"
+          else
+            echo " API Endpoint Plan not found"
+            exit 1
+          fi
+      
+      - name: Check SQL Script exists
+        run: |
+          if [ -f "docs/RaceDaySystem.sql" ] || [ -f "docs/RaceDayDB.sql" ] || [ -f "docs/RaceDay.sql" ]; then
+            echo " SQL Script found"
+          else
+            echo " SQL Script not found"
+            exit 1
+          fi
+      
+      - name: Check README exists
+        run: |
+          if [ -f "README.md" ]; then
+            echo " README.md found"
+          else
+            echo " README.md not found"
+            exit 1
+          fi
+      
+      - name: All checks passed!
+        run: echo " All required Part 1 files are present!"
