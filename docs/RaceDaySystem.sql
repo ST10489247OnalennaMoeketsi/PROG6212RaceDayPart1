@@ -26,7 +26,7 @@ GO
    USERS
    Stores both Organisers and Participants.
    ========================================================= */
-CREATE TABLE dbo.Users
+CREATE TABLE dbo.Users 
 (
     UserId INT IDENTITY(1,1) NOT NULL,
     FirstName NVARCHAR(50) NOT NULL,
