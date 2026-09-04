@@ -172,7 +172,7 @@ GO
    INDEXES
    These support common lookups used by the planned API.
    ========================================================= */
-CREATE INDEX IX_Events_OrganiserId
+CREATE INDEX IX_Events_OrganiserId 
     ON dbo.Events(OrganiserId);
 
 CREATE INDEX IX_Events_EventDate
