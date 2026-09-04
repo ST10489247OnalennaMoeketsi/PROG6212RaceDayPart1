@@ -259,7 +259,7 @@ GO
    SEED DATA - CATEGORIES
    More than the minimum to demonstrate reusable categories.
    ========================================================= */
-INSERT INTO dbo.Categories
+INSERT INTO dbo.Categories 
     (Name, Description)
 VALUES
     (N'5 KM Run', N'Short-distance five kilometre road race.'),
