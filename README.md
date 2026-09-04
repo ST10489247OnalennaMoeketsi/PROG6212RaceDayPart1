@@ -99,8 +99,7 @@ The workflow checks that the ERD, API endpoint plan and SQL script exist in
 the `/docs` folder and are non-empty.
 
 ### CI/CD green build screenshot
-
-`[INSERT YOUR REAL GREEN GITHUB ACTIONS SCREENSHOT HERE]`
+<img width="1920" height="1080" alt="Screenshot 2026-09-04 182043" src="https://github.com/user-attachments/assets/25fbf8f7-ef82-4a7c-a7cd-bb76ae4e619d" /> 
 
 ## GitHub commit requirement
 
