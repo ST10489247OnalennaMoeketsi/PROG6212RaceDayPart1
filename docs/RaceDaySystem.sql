@@ -76,7 +76,7 @@ GO
    CATEGORIES
    Reusable race categories such as 5 KM, 10 KM and 21 KM.
    ========================================================= */
-CREATE TABLE dbo.Categories
+CREATE TABLE dbo.Categories 
 (
     CategoryId INT IDENTITY(1,1) NOT NULL,
     Name NVARCHAR(100) NOT NULL,
