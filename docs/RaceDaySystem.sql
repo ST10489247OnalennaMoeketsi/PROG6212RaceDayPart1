@@ -226,7 +226,7 @@ GO
    SEED DATA - EVENTS
    3 realistic South African events.
    ========================================================= */
-INSERT INTO dbo.Events
+INSERT INTO dbo.Events 
     (OrganiserId, EventName, Description, Location,
      EventDate, RegistrationDeadline, Status)
 VALUES
