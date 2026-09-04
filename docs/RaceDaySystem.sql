@@ -143,7 +143,7 @@ GO
    A participant can receive at most one result per enrolment.
    An enrolment may have no result yet.
    ========================================================= */
-CREATE TABLE dbo.Results
+CREATE TABLE dbo.Results 
 (
     ResultId INT IDENTITY(1,1) NOT NULL,
     EnrolmentId INT NOT NULL,
