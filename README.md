@@ -1,6 +1,6 @@
 # RaceDay - Part 1 System Planning and Database
 
-## Project overview
+## RaceDay Project Overview 
 
 RaceDay is a full-stack web-based event management system designed for the
 South African road-running, walking and cycling community.
