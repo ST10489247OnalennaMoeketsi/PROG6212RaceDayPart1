@@ -198,7 +198,7 @@ GO
    database seed-data demonstration. Part 2 should use the
    application's approved password-hashing implementation.
    ========================================================= */
-INSERT INTO dbo.Users
+INSERT INTO dbo.Users 
     (FirstName, LastName, Email, PasswordHash, Role, Phone)
 VALUES
     (N'Thabo', N'Mokoena',
