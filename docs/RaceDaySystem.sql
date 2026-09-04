@@ -288,7 +288,7 @@ GO
 /* =========================================================
    SEED DATA - ENROLMENTS
    ========================================================= */
-INSERT INTO dbo.Enrolments
+INSERT INTO dbo.Enrolments 
     (ParticipantId, EventId, CategoryId, Status)
 VALUES
     (3, 1, 2, N'Active'),
